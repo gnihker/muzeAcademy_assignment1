@@ -22,6 +22,9 @@ button {
 
 .heading {
     margin-bottom: 1em;
+}
+
+.centered {
     text-align: center;
 }
 
@@ -176,9 +179,15 @@ button {
 }
 
 #flex-7 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
 }
 
 #flex-8 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 35;
 }
 
 #flex-9 {
