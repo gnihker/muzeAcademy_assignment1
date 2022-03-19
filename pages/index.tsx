@@ -1,9 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import IconItem from '../components/IconItem'
+import MenuItem from '../components/MenuItem'
+import RectBanner from '../components/RectBanner'
+import SearchInput from '../components/SearchInput'
+import SquareImage from '../components/SquareImage'
 
 const Home: NextPage = () => {
   return (
+
     <div>
       <Head>
         <title>Next Flex Assignment</title>
@@ -17,16 +23,27 @@ const Home: NextPage = () => {
             <div id='flex-3'>
               <Image src={'/logo.svg'} width={36} height={36} alt={'logo'} />
               <nav>
+                <MenuItem label="All Apparel Gadget" />
               </nav>
               <div className={'icon-menu'}>
+                <IconItem icon="menu" />
               </div>
             </div>
+            <SearchInput />
             <div id='flex-4'>
+              <IconItem icon = "bag" />
+              <IconItem icon = "user" />
             </div>
           </div>
         </div>
 
         <div className='banner-gallery' id='flex-5'>
+          <RectBanner size="large"/>
+          <SquareImage size="small"/>
+          <SquareImage size="small"/>
+          <SquareImage size="medium"/>
+          <SquareImage size="small"/>
+          <SquareImage size="small"/>
         </div>
         <h1 className='heading'>Products</h1>
         <div className='product-list' id='flex-6'>
